@@ -117,7 +117,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #d4838f;
+  color: #E64996;
   font-style: normal;
   font-weight: bold;
   font-size: 90px;
@@ -161,7 +161,7 @@ button,
 input {
   font-family: inherit;
   font-size: 100%;
-  background: #96d7eb;
+  background: #FE95CD;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -170,7 +170,7 @@ input {
 }
 
 button:hover, input:hover{
-  background: #d6abb1;
+  background: #FEC4ED;
 } 
 
 /* Subheading */
