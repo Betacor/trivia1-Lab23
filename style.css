@@ -134,15 +134,25 @@ body {
 
 /* Instructions */
 .instructions {
-  margin: 5rem;
-  
+  margin: 4rem;
+  text-align: center;
 }
 
-.instrucciones {
+.instruccion {
   font-size: 27px;
-  padding: 0 150px;
+  padding: 0 40px 0 150px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.instructions p, .cont-btn{
+  margin: 20px auto;
+}
+
+.cont-btn{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
 }
 
 
@@ -192,23 +202,31 @@ h2 {
 
 /*CSS Preguntas*/
 
-/*.pregunta {
-  
-}*/
 
 .titulo-pregunta{
   color: var(--color-primario);
   text-align: center; 
+  font-size: 3em;
   
 }
 
 .contenido-pregunta{
   display: flex;
-  align-
+  align-items: center;
+  justify-content: space-around;
 }
-
 
 
 .imagen-pregunta {
-  width: 250px;
+  width: 400px;
+  margin: 1em;
+  border-radius: 5%;
+  
 }
+
+/*CSS Radio Buttons
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
