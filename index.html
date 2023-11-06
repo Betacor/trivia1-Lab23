@@ -7,6 +7,10 @@
     <title>La Super Trivia</title>
     <!-- The website stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    
     <!-- The website JavaScript file -->
     <script src="/script.js" defer></script>
   </head>
@@ -21,8 +25,8 @@
           title="Click the image!"
         />
         <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
+          <!--<h2>Using this project</h2>-->
+          <p class="instrucciones">
             Tienes 5 preguntas para poner a prueba tus conocimientos, solo selecciona el tema de tu preferencia 
             y a jugar!.
             <span class="fileopener" data-file="TODO.md" data-line="0"
@@ -31,9 +35,17 @@
           
           <!--  🚧 TODO: ADD BUTTON NOMBRE -->
           
-          <p>
-            Ingresa tu nombre <div> </div>
+          <p class="ing-nombre">
+            Ingresa tu nombre: <div><input type="text" name="nombre" id="inputNombre"/></div>
           </p>
+        
+          <p>
+            Selecciona una Trivia
+          </p>
+          <div class="cont-btn">
+            <button>Países</button> 
+            <button>Princesas</button>
+          </div>
 
           <!-- Once you've added the button from TODO.md, click it in the page -->
           <!-- Check out the function in script.js to see how it works -->
@@ -47,6 +59,11 @@
         
         <div class="pregunta">
           <h2>¿Cuál es la capital de Canadá?
+          <img 
+          src="https://images.unsplash.com/photo-1551009175-15bdf9dcb580?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="imagen-pregunta"
+          alt="Bandera Canada"      
+          />
             
             
           </h2>

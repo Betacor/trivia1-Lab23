@@ -18,14 +18,7 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #f2e4f9;
   --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  
-  /* --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";*/
+  --color-primary: #FFFF00; 
 }
 
 /* Basic page style resets */
@@ -40,8 +33,6 @@ to this section's matching END comment to see page-specific styles.
   display: none !important;
 }
 
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -184,4 +175,11 @@ h2 {
 }
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
+}
+
+
+
+/*CSS Preguntas*/
+.imagen-pregunta {
+  width: 300px;
 }
