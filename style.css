@@ -18,7 +18,9 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #f2e4f9;
   --color-text-main: #000000;
-  --color-primary: #FFFF00; 
+  --color-primario: #d4838f; 
+  --color-secundario: #FFFF00; 
+  --color-terciario: #FFFF00; 
 }
 
 /* Basic page style resets */
@@ -126,14 +128,23 @@ body {
 /* Very light scaling for our illustration */
 .illustration {
   max-width: 100%;
-  max-height: 450px;
+  max-height: 420px;
   margin-top: 0;
 }
 
 /* Instructions */
 .instructions {
-  margin: 1rem auto 0;
+  margin: 5rem;
+  
 }
+
+.instrucciones {
+  font-size: 27px;
+  padding: 0 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 /* Button - Add it from the README instructions */
 button,
@@ -181,9 +192,21 @@ h2 {
 
 /*CSS Preguntas*/
 
-.pregunta {
-  display: 
+/*.pregunta {
+  
+}*/
+
+.titulo-pregunta{
+  color: var(--color-primario);
+  text-align: center; 
+  
 }
+
+.contenido-pregunta{
+  display: flex;
+  align-
+}
+
 
 
 .imagen-pregunta {
