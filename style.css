@@ -18,7 +18,7 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #f2e4f9;
   --color-text-main: #000000;
-  --color-primario: #d4838f; 
+  --color-primario: #FE6DAE; 
   --color-secundario: #FFFF00; 
   --color-terciario: #FFFF00; 
 }
@@ -231,7 +231,7 @@ h2 {
 /*CSS Radio Buttons*/
 
 .radio-contenedor {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   gap: 10px;
 }
