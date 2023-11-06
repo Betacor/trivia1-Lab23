@@ -112,7 +112,7 @@ END Glitch hello-app default styles
 
 body {
   font-family: HK Grotesk;
-  background-color: var(--color-bg);
+  background-color: #d6abb1;
 }
 
 /* Page structure */
@@ -131,7 +131,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
+  color: #d4838f;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
