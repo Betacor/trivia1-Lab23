@@ -120,14 +120,14 @@ body {
   font-weight: bold;
   font-size: 90px;
   line-height: 110%;
-  margin: 0;
+  margin: 80px auto;
 }
 
 /* Very light scaling for our illustration */
 .illustration {
   max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
+  max-height: 450px;
+  margin-top: 0;
 }
 
 /* Instructions */
@@ -180,6 +180,12 @@ h2 {
 
 
 /*CSS Preguntas*/
+
+.pregunta {
+  display: 
+}
+
+
 .imagen-pregunta {
-  width: 300px;
+  width: 250px;
 }
