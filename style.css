@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  --color-bg: #f2e4f9;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
   
@@ -38,16 +38,17 @@ to this section's matching END comment to see page-specific styles.
 
 /* Import fonts */
 @font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+  font-family: 'Roboto', sans-serif;
+  src: url(@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap')
     format("opentype");
 }
-@font-face {
+
+/*@font-face {
   font-family: HK Grotesk;
   font-weight: bold;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
-}
+}*/
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -114,7 +115,7 @@ END Glitch hello-app default styles
 
 body {
   font-family: HK Grotesk;
-  background-color: #d6abb1;
+  background-color: var(--color-bg);
 }
 
 /* Page structure */
@@ -133,7 +134,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #96d7eb;
+  color: #d4838f;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
