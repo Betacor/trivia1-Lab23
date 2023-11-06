@@ -140,12 +140,12 @@ body {
 
 .instruccion {
   font-size: 27px;
-  padding: 0 40px 0 150px;
+  padding: 0 150px;
   margin: 0 auto;
 }
 
 .instructions p, .cont-btn{
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .cont-btn{
@@ -161,13 +161,17 @@ button,
 input {
   font-family: inherit;
   font-size: 100%;
-  background: #FFFFFF;
+  background: #96d7eb;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0.5rem 1rem;
   transition: 500ms;
 }
+
+button:hover, input:hover{
+  background: #d6abb1;
+} 
 
 /* Subheading */
 h2 {
@@ -224,9 +228,10 @@ h2 {
   
 }
 
-/*CSS Radio Buttons
+/*CSS Radio Buttons*/
 
-.radio-container {
+.radio-contenedor {
   display: flex;
   align-items: center;
   gap: 10px;
+}
