@@ -27,8 +27,6 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
   const mensajeElement = document.getElementById("mensaje");
   const mensaje = sessionStorage.getItem("mensaje");
