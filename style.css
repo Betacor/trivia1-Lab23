@@ -110,8 +110,9 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 
 .mensaje-nombre{
   text-align: center;
-  padding: 0 200px;
+  padding: 0 200px 60px 200px;
   margin: 80px auto;
+  border-bottom: 2px solid var(--color-titulo);
 }
 
 .mensaje-nombre p{
@@ -161,4 +162,44 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   padding: 1rem 0 0.75rem 0;
   width: 100%;
   border-top: 2px solid var(--color-titulo);
+}
+
+
+
+
+
+
+
+
+/* Estilo para el radio button personalizado */
+.custom-radio {
+  appearance: none; /* Oculta el aspecto nativo del radio button */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333; /* Borde del radio button */
+  border-radius: 50%; /* Lo hace circular */
+  outline: none;
+  cursor: pointer;
+}
+
+/* Estilo para el radio button personalizado cuando está marcado */
+.custom-radio:checked {
+  background-color: #333; /* Color de fondo cuando está marcado */
+}
+
+/* Estilo para el marcador dentro del radio button */
+.custom-radio::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; /* Lo hace circular */
+  background-color: #333; /* Color del marcador */
+  margin: 3px; /* Espacio entre el marcador y el borde del radio button */
+  opacity: 0; /* Oculta el marcador cuando no está marcado */
+}
+
+/* Estilo para el marcador cuando el radio button está marcado */
+.custom-radio:checked::before {
+  opacity: 1; /* Muestra el marcador cuando está marcado */
 }
