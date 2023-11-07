@@ -11,6 +11,8 @@ function mostrarMensaje() {
   
     const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${opcionSeleccionada}. Mucha suerte!`;
     document.getElementById("mensaje").textContent = mensaje;
+    sessionStorage.setItem("mensaje", mensaje); // Almacenar el mensaje en sessionStorage
+    window.location.href = "paises.html";
   } else {
     // Mensaje alerta
     alert("Debes ingresar ambos datos para continuar.");
@@ -72,3 +74,14 @@ const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
 
 // Agrega un manejador de eventos al botón para llamar a la función mostrarMensaje cuando se haga clic
 botonMostrarMensaje.addEventListener("click", mostrarMensaje);*/
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mensajeElement = document.getElementById("mensaje");
+  const mensaje = sessionStorage.getItem("mensaje");
+  if (mensaje) {
+    mensajeElement.textContent = mensaje;
+  } else {
+    mensajeElement.textContent = "Mensaje no encontrado.";
+  }
+});
