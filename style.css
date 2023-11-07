@@ -1,20 +1,4 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
+/* CSS variables */
 :root {
   --color-bg: #f2e4f9;
   --color-text-main: #000000;
@@ -32,16 +16,16 @@ to this section's matching END comment to see page-specific styles.
   font-family: 'Nunito', sans-serif;
 }
 
-[hidden] {
+/*[hidden] {
   display: none !important;
-}
-
+}*/
 
 
 /* Navigation grid */
 .footer {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  
+  
   margin: 0 auto;
   padding: 1rem 0 0.75rem 0;
   width: 100%;
@@ -49,23 +33,7 @@ to this section's matching END comment to see page-specific styles.
   border-top: 2px solid var(--color-titulo);;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
 
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
 
 .divider {
   padding: 0 1rem;
@@ -169,35 +137,14 @@ button:hover, input:hover, .select:hover{
   background: #FEC4ED;
 } 
 
-/* Subheading */
-h2 {.
-  color: #2800FF;
+
+.mensaje-nombre{
+  text-align: center
+  margin: 80px auto;
+  padding: 0 200px;
 }
 
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
-
-/* Links that open files in the editor */
-.fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
-  color: var(--color-secondary);
-}
-.fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
-}
-
+.mensaje-nombre{}
 
 
 /*CSS Preguntas*/
