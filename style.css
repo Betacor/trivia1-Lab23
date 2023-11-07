@@ -2,9 +2,10 @@
 :root {
   --color-bg: #f2e4f9;
   --color-titulo: #E64996;
-  --color-primario: #FE6DAE; 
-  --color-secundario: #FFFF00; 
-  --color-terciario: #FFFF00; 
+  --color-primario: #FE95CD; /*rosado*/
+  --color-secundario: #89c9e3; /*celeste*/
+  --color-terciario: #839cb5; /*gris*/
+  --color-hover: #;
 }
 
 /* Resets */
@@ -20,6 +21,7 @@ body {
   background-color: var(--color-bg);
 }
 
+/*Inicio*/
 .contenido-inicio {
   display: flex;
   flex-direction: column;
@@ -27,16 +29,15 @@ body {
   justify-content: center;
 }
 
-/* titulo principal */
+/* Titulo principal */
 .titulo {
-  color: #E64996;
+  color: var(--color-titulo);
   font-style: normal;
   font-weight: bold;
   font-size: 90px;
   line-height: 110%;
   margin: 70px auto;
 }
-
 
 .imagen-inicio {
   max-width: 100%;
@@ -56,21 +57,21 @@ body {
   margin: 0 auto;
 }
 
-.span-inicio{
+.span-instruccion{
   font-size: 1.7rem;
   font-weight: bold;
 }
 
-.cont-inicio-datos h3, .cont-btn{
+.cont-ingreso-datos h3, .cont-btn{
   margin: 30px auto;
 }
 
-.bn-sel-trivia{
+/*.bn-sel-trivia{
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 0;
-}
+}*/
 
 
 .cont-ingreso-datos{
@@ -86,16 +87,15 @@ body {
   margin: 0 auto;
 }
 
-.form-select{
+/*.form-select{
   padding: 15px 25px;
   margin: 0 auto;
-}
+}*/
 
-/* Button - Add it from the README instructions */
 button{
   font-family: inherit;
   font-size: 100%;
-  background: #FE95CD;
+  background: var(--color-primario);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -110,7 +110,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 .cont-ingreso-datos input, select{
   font-family: inherit;
   font-size: 100%;
-  background: #89c9e3;
+  background: var(--color-secundario);
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
