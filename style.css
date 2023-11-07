@@ -143,6 +143,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 
 .imagen-pregunta {
   width: 380px;
+  height: 250px;
   margin: 2em;
   border-radius: 5%;
 }
@@ -176,7 +177,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   appearance: none; /* Oculta el aspecto nativo del radio button */
   width: 20px;
   height: 20px;
-  border: 2px solid #333; /* Borde del radio button */
+  border: 2px solid var(--color-titulo); /* Borde del radio button */
   border-radius: 50%; /* Lo hace circular */
   outline: none;
   cursor: pointer;
@@ -203,3 +204,4 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 .custom-radio:checked::before {
   opacity: 1; /* Muestra el marcador cuando está marcado */
 }
+
