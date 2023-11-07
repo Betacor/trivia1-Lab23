@@ -166,11 +166,12 @@ body {
 
 .cont-nombre, .cont-btn{
   text-align-center;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .form-select{
   padding: 15px 25px;
+  margin: 0 auto;
 }
 
 /* Button - Add it from the README instructions */
