@@ -1,4 +1,4 @@
-//const inputNombre = document.getElementById('inputNombre');
+//función Saludo + Seleccion de Trivia
 
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
@@ -11,3 +11,11 @@ function seleccionarTrivia(trivia) {
   document.getElementById("triviaSeleccionada").textContent = trivia;
   mostrarMensaje();
 }
+
+
+function mensajeBienvenida(){
+  const inputNombre = document.getElementById('inputNombre');
+  
+  document.getElementById("saludo").innerText = inputNombre;
+}
+
