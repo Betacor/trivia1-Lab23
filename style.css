@@ -129,7 +129,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 }
 
 .titulo-pregunta{
-  color: var(--color-primario);
+  color: var(--color-titulo);
   text-align: center; 
   font-size: 2.2em;
 }
@@ -156,15 +156,14 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   gap: 10px;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  margin: 0 auto;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  border-top: 2px solid var(--color-titulo);
-}
 
+
+/*Botón Eviar respuestas*/
+.btn-responder{
+  margin: 1em auto;
+  display:flex;
+  font-size: 1.2em;
+}
 
 
 
@@ -177,7 +176,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   appearance: none; /* Oculta el aspecto nativo del radio button */
   width: 20px;
   height: 20px;
-  border: 2px solid var(--color-titulo); /* Borde del radio button */
+  border: 2px solid var(--color-primario); /* Borde del radio button */
   border-radius: 50%; /* Lo hace circular */
   outline: none;
   cursor: pointer;
@@ -185,7 +184,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 
 /* Estilo para el radio button personalizado cuando está marcado */
 .custom-radio:checked {
-  background-color: #333; /* Color de fondo cuando está marcado */
+  background-color: var(--color-primario); /* Color de fondo cuando está marcado */
 }
 
 /* Estilo para el marcador dentro del radio button */
@@ -195,7 +194,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   width: 12px;
   height: 12px;
   border-radius: 50%; /* Lo hace circular */
-  background-color: #333; /* Color del marcador */
+  background-color: var(--color-primario); /* Color del marcador */
   margin: 3px; /* Espacio entre el marcador y el borde del radio button */
   opacity: 0; /* Oculta el marcador cuando no está marcado */
 }
@@ -205,3 +204,13 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   opacity: 1; /* Muestra el marcador cuando está marcado */
 }
 
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  color: var(--color-);
+  border-top: 2px solid var(--color-titulo);
+}
