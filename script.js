@@ -19,9 +19,13 @@ function seleccionarTrivia(trivia) {
 
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
-  const triviaPaises = document.getElementById("triviaPaises").value;
-  const seleccionTrivia = document.getElementById("seleccionTrivia").value;
+  const seleccionTrivia = document.getElementById("seleccionTrivia");
+  const triviaSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
+  console.log(seleccionTrivia);
   
-  const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${}. Mucha suerte!`;
+  if (selectedOption) {
+    const triviaSeleccionada = selectedOption.value;
+  
+  const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${seleccionTrivia}. Mucha suerte!`;
   document.getElementById("mensaje").textContent = mensaje;
 }
