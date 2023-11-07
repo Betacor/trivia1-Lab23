@@ -18,6 +18,7 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #f2e4f9;
   --color-text-main: #000000;
+  --color-titulo: #E64996;
   --color-primario: #FE6DAE; 
   --color-secundario: #FFFF00; 
   --color-terciario: #FFFF00; 
@@ -36,30 +37,6 @@ to this section's matching END comment to see page-specific styles.
 }
 
 
-/* Our remix on glitch button */
-.btn--remix {
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
 
 /* Navigation grid */
 .footer {
@@ -69,7 +46,7 @@ to this section's matching END comment to see page-specific styles.
   padding: 1rem 0 0.75rem 0;
   width: 100%;
   flex-wrap: wrap;
-  border-top: 4px solid #fff;
+  border-top: 2px solid var(--color-titulo);;
 }
 
 .footer a:not(.btn--remix):link,
@@ -102,7 +79,7 @@ body {
 }
 
 /* Page structure */
-.wrapper {
+.inicio {
   min-height: var(--wrapper-height);
   display: grid;
   place-items: center;
