@@ -20,14 +20,7 @@ body {
   background-color: var(--color-bg);
 }
 
-/* Page structure */
-.inicio {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.content {
+.contenido {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,9 +87,7 @@ body {
 }
 
 /* Button - Add it from the README instructions */
-button,
-input,
-.select{
+button{
   font-family: inherit;
   font-size: 100%;
   background: #FE95CD;
@@ -107,9 +98,21 @@ input,
   transition: 500ms;
 }
 
-button:hover, input:hover, .select:hover{
+button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   background: #FEC4ED;
 } 
+
+.cont-ingreso-datos input, select{
+  font-family: inherit;
+  font-size: 100%;
+  background: #89c9e3;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
 
 
 .mensaje-nombre{
@@ -131,12 +134,10 @@ button:hover, input:hover, .select:hover{
   margin: 10em;
 }
 
-
 .titulo-pregunta{
   color: var(--color-primario);
   text-align: center; 
   font-size: 3em;
-  
 }
 
 .contenido-pregunta{
@@ -145,12 +146,10 @@ button:hover, input:hover, .select:hover{
   justify-content: space-around;
 }
 
-
 .imagen-pregunta {
   width: 400px;
   margin: 1em;
   border-radius: 5%;
-  
 }
 
 /*CSS Radio Buttons*/
@@ -160,8 +159,6 @@ button:hover, input:hover, .select:hover{
   align-items: center;
   gap: 10px;
 }
-
-
 
 /* Footer */
 .footer {
