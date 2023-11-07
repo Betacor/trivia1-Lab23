@@ -6,6 +6,7 @@
   --color-secundario: #89c9e3; /*celeste*/
   --color-terciario: #839cb5; /*gris*/
   --color-hover: #FEC4ED;
+  --color-claro: #FDFEFE;
 }
 
 /* Resets */
@@ -22,43 +23,28 @@ body {
 }
 
 /* Header */
-              header {
-                  background-color: #333;
-                  color: #fff;
-                  padding: 10px;
-                  text-align: center;
-              }
+header {
+  background-color: var(--color-primario);
+  color: var(--color-claro);
+  padding: 10px;
+  text-align: center;
+}
 
-              nav ul {
-                  list-style: none;
-                  padding: 0;
-              }
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-              nav li {
-                  display: inline;
-                  margin-right: 20px;
-              }
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
 
-              nav a {
-                  text-decoration: none; /* Elimina el subrayado del enlace */
-                  color: #fff;
-                  font-size: 18px; /* Ajusta el tamaño de la letra según tus preferencias */
-              }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav a {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: var(--color-claro);
+  font-size: 18px; /* Ajusta el tamaño de la letra según tus preferencias */
+}
 
 /*Inicio*/
 .contenido-inicio {
