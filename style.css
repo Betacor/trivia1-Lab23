@@ -156,6 +156,13 @@ body {
 }
 
 
+.cont-ingreso-datos{
+  display: flex;
+  align-items:center;
+  text-align: center;
+  margin:
+}
+
 /* Button - Add it from the README instructions */
 button,
 input {

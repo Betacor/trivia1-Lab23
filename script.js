@@ -17,15 +17,29 @@ function seleccionarTrivia(trivia) {
 
 
 
+
+// Obtén una referencia al botón por su ID
+const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
+
+// Agrega un manejador de eventos al botón para llamar a la función mostrarMensaje
+botonMostrarMensaje.addEventListener("click", mostrarMensaje);
+
+
+
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
   const seleccionTrivia = document.getElementById("seleccionTrivia");
   const triviaSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
   console.log(seleccionTrivia);
   
-  if (selectedOption) {
-    const triviaSeleccionada = selectedOption.value;
+  if (triviaSeleccionada) {
+    const triviaSeleccionada = triviaSeleccionada.value;
   
-  const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${seleccionTrivia}. Mucha suerte!`;
-  document.getElementById("mensaje").textContent = mensaje;
+    const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${seleccionTrivia}. Mucha suerte!`;
+    document.getElementById("mensaje").textContent = mensaje;
+  } else {
+    // Manejar el caso en el que no se ha seleccionado ninguna opción
+    alert("Debes seleccionar una trivia para continuar.");
+  }
 }
+
