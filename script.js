@@ -15,7 +15,7 @@ function seleccionarTrivia(trivia) {
   mostrarMensaje();
 }*/
 
-
+//aqui empieza otra opcion
 
 /*
 // Obtén una referencia al botón por su ID
@@ -29,11 +29,12 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
   const seleccionTrivia = document.getElementById("seleccionTrivia");
-  const opcionSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
-  console.log(seleccionTrivia);
+  const opcionSeleccionada = seleccionTrivia.value;
+  const mensajeElement = document.getElementById("mensaje");
   
   if (opcionSeleccionada) {
-    const triviaSeleccionada = opcionSeleccionada.value;
+  const triviaSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
+    //const triviaSeleccionada = opcionSeleccionada.value;
   
     const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${opcionSeleccionada}. Mucha suerte!`;
     document.getElementById("mensaje").textContent = mensaje;
@@ -42,14 +43,11 @@ function mostrarMensaje() {
     alert("Debes seleccionar una trivia para continuar.");
   }
 }
+document.getElementById("seleccionTrivia").addEventListener("change", mostrarMensaje);
 */
 
-// Obtén una referencia al botón por su ID
-const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
 
-// Agrega un manejador de eventos al botón para llamar a la función mostrarMensaje cuando se haga clic
-botonMostrarMensaje.addEventListener("click", mostrarMensaje);
-
+//otra opcion
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
   const seleccionTrivia = document.getElementById("seleccionTrivia");
@@ -65,3 +63,9 @@ function mostrarMensaje() {
     alert("Debes ingresar un nombre y seleccionar una trivia antes de presionar 'Empezar a Jugar'.");
   }
 }
+
+// Obtén una referencia al botón por su ID
+const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
+
+// Agrega un manejador de eventos al botón para llamar a la función mostrarMensaje cuando se haga clic
+botonMostrarMensaje.addEventListener("click", mostrarMensaje);
