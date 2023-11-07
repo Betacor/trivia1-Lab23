@@ -163,6 +163,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   margin: 1em auto;
   display:flex;
   font-size: 1.2em;
+  color: #F7F9F9;
 }
 
 
@@ -211,6 +212,6 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   margin: 0 auto;
   padding: 1rem 0 0.75rem 0;
   width: 100%;
-  color: var(--color-);
+  color: var(--color-terciario);
   border-top: 2px solid var(--color-titulo);
 }
