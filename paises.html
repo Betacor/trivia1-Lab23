@@ -21,33 +21,7 @@
     <p id="mensaje"></p>
   </div>  
     
-  <!--<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const mensajeElement = document.getElementById("mensaje");
-      const mensaje = sessionStorage.getItem("mensaje");
-      if (mensaje) {
-        mensajeElement.textContent = mensaje;
-      } else {
-        mensajeElement.textContent = "Mensaje no encontrado.";
-      }
-    });
-  </script>-->
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const mensajeElement = document.getElementById("mensaje");
-          if (mensajeElement) {
-            const mensaje = sessionStorage.getItem("mensaje");
-            if (mensaje) {
-              mensajeElement.textContent = mensaje;
-            } else {
-              mensajeElement.textContent = "Mensaje no encontrado.";
-            }
-          } else {
-            console.error("El elemento con ID 'mensaje' no se encontró en el DOM.");
-          }
-        });
-    </script>
+
     
 </body>
 </html>
