@@ -54,4 +54,9 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 
 
-//PREGUNTAS
+//TRIVIAS
+
+//princesas
+function respuestasPrincesas(){
+  
+}
