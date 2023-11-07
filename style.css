@@ -5,7 +5,7 @@
   --color-primario: #FE95CD; /*rosado*/
   --color-secundario: #89c9e3; /*celeste*/
   --color-terciario: #839cb5; /*gris*/
-  --color-hover: #;
+  --color-hover: #FEC4ED;
 }
 
 /* Resets */
@@ -66,37 +66,35 @@ body {
   margin: 30px auto;
 }
 
-/*.bn-sel-trivia{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 0;
-}*/
-
-
 .cont-ingreso-datos{
   display: flex;
-  justify-content-center;
+  justify-content: center;
   align-items:center;
   padding: 70px 150px;
   margin: 0 auto;
 }
 
 .cont-nombre, .cont-btn{
-  text-align-center;
+  text-align: center;
   margin: 0 auto;
 }
-
-/*.form-select{
-  padding: 15px 25px;
-  margin: 0 auto;
-}*/
 
 button{
   font-family: inherit;
   font-size: 100%;
   background: var(--color-primario);
-  border: 1px solid #000000;
+  border: 0px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+.cont-ingreso-datos input, select{
+  font-family: inherit;
+  font-size: 100%;
+  background: var(--color-secundario);
+  border: 0px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0.5rem 1rem;
@@ -104,21 +102,11 @@ button{
 }
 
 button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
-  background: #FEC4ED;
+  background: var(--color-hover);
 } 
 
-.cont-ingreso-datos input, select{
-  font-family: inherit;
-  font-size: 100%;
-  background: var(--color-secundario);
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
 
-
+/* Mensaje Saludo*/
 
 .mensaje-nombre{
   text-align: center;
@@ -129,7 +117,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 .mensaje-nombre p{
   font-size: 30px;
   font-weight: bold;
-  color: #839cb5;
+  color: var(--color-terciario);
 }
 
 
@@ -171,5 +159,5 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   margin: 0 auto;
   padding: 1rem 0 0.75rem 0;
   width: 100%;
-  border-top: 2px solid var(--color-titulo);;
+  border-top: 2px solid var(--color-titulo);
 }
