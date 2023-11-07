@@ -24,9 +24,10 @@
 const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
 
 botonMostrarMensaje.addEventListener("click", mostrarMensaje);
-
 */
-//Session Storage
+
+
+//Recupera datos desde el Session Storage
 document.addEventListener("DOMContentLoaded", function() {
   const mensajeElement = document.getElementById("mensaje");
   const mensaje = sessionStorage.getItem("mensaje");
@@ -39,7 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-//otro
+
+//recuperar datos ingresados, validacion y alerta
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
   const seleccionTrivia = document.getElementById("seleccionTrivia");
