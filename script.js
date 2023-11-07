@@ -55,14 +55,14 @@ function mostrarMensaje() {
     //const triviaSeleccionada = opcionSeleccionada.value;
     let redireccion = "";
     
-    if (opcionSeleccionada === "paises") {
+    if (opcionSeleccionada === "Paises") {
       redireccion = "paises.html";
-    } else if (opcionSeleccionada === "princesas") {
+    } else if (opcionSeleccionada === "Princesas") {
       redireccion = "princesas.html";
     }
     
     if (redireccion) {
-      const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${opcionSeleccionada}. Mucha suerte!`;
+      const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${opcionSeleccionada}. ¡Mucha suerte!`;
       //document.getElementById("mensaje").textContent = mensaje;
       sessionStorage.setItem("mensaje", mensaje); //guardar mensaje en sessionStorage
       window.location.href = redireccion; // redirigir a la pagina trivia
