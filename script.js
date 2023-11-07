@@ -29,13 +29,13 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
   const seleccionTrivia = document.getElementById("seleccionTrivia");
-  const triviaSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
+  const opcionSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
   console.log(seleccionTrivia);
   
-  if (triviaSeleccionada) {
-    const triviaSeleccionada = triviaSeleccionada.value;
+  if (opcionSeleccionada) {
+    const triviaSeleccionada = seleccionTrivia.value;
   
-    const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${seleccionTrivia}. Mucha suerte!`;
+    const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${triviaSeleccionada}. Mucha suerte!`;
     document.getElementById("mensaje").textContent = mensaje;
   } else {
     // Manejar el caso en el que no se ha seleccionado ninguna opción

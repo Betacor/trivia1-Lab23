@@ -170,12 +170,13 @@ body {
 }
 
 .form-select{
-  padding: 20px;
+  padding: 15px 25px;
 }
 
 /* Button - Add it from the README instructions */
 button,
-input {
+input,
+.form-select{
   font-family: inherit;
   font-size: 100%;
   background: #FE95CD;
@@ -186,12 +187,12 @@ input {
   transition: 500ms;
 }
 
-button:hover, input:hover{
+button:hover, input:hover, .form-select:hover{
   background: #FEC4ED;
 } 
 
 /* Subheading */
-h2 {
+h2 {.
   color: #2800FF;
 }
 
@@ -224,7 +225,7 @@ h2 {
 /*CSS Preguntas*/
 
 .pregunta{
-  margin: 4em;
+  margin: 10em;
 }
 
 
