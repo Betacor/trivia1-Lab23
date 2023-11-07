@@ -6,7 +6,7 @@
   --color-secundario: #89c9e3; /*celeste*/
   --color-terciario: #839cb5; /*gris*/
   --color-hover: #FEC4ED;
-  --color-claro: #FDFEFE;
+  --color-claro: #FDFEFE; /*blanco*/
 }
 
 /* Resets */
@@ -22,9 +22,6 @@ body {
   background-color: var(--color-bg);
 }
 
-.nav li img{
-  width: 100px;
-}
 
 /* Header */
 header {
@@ -34,21 +31,17 @@ header {
   text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
 nav a {
-  text-decoration: none; /* Elimina el subrayado del enlace */
+  text-decoration: none; 
   color: var(--color-claro);
-  font-size: 18px; /* Ajusta el tamaño de la letra según tus preferencias */
+  font-size: 18px;
 }
+
+nav img{
+  width: 100px;
+}
+
+
 
 /*Inicio*/
 .contenido-inicio {
