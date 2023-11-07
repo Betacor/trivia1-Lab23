@@ -22,6 +22,10 @@ body {
   background-color: var(--color-bg);
 }
 
+.nav li img{
+  width: 100px;
+}
+
 /* Header */
 header {
   background-color: var(--color-primario);
