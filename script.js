@@ -58,5 +58,9 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 //princesas
 function respuestasPrincesas(){
-  
+  const formPrincesas = document.getElementById("formPrincesas");
+  const respuestasPrincesas = {};
 }
+
+
+const preguntaPrincesa = formPrincesas.querySelectorAll(".preguntaPrincesa");
