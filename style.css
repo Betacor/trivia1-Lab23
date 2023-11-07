@@ -21,6 +21,45 @@ body {
   background-color: var(--color-bg);
 }
 
+/* Header */
+              header {
+                  background-color: #333;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+              }
+
+              nav ul {
+                  list-style: none;
+                  padding: 0;
+              }
+
+              nav li {
+                  display: inline;
+                  margin-right: 20px;
+              }
+
+              nav a {
+                  text-decoration: none; /* Elimina el subrayado del enlace */
+                  color: #fff;
+                  font-size: 18px; /* Ajusta el tamaño de la letra según tus preferencias */
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Inicio*/
 .contenido-inicio {
   display: flex;
@@ -156,7 +195,10 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   gap: 10px;
 }
 
-
+.radio-contenedor label{
+  font-size: 23px;
+  padding-left: 10px;
+}
 
 /*Botón Eviar respuestas*/
 .btn-responder{
