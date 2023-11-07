@@ -124,24 +124,25 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 /*CSS Preguntas*/
 
 .pregunta{
-  margin: 10em;
+  margin: 6em 10em;
 }
 
 .titulo-pregunta{
   color: var(--color-primario);
   text-align: center; 
-  font-size: 3em;
+  font-size: 2.2em;
 }
 
 .contenido-pregunta{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 4em;
 }
 
 .imagen-pregunta {
-  width: 400px;
-  margin: 1em;
+  width: 380px;
+  margin: 2em;
   border-radius: 5%;
 }
 
