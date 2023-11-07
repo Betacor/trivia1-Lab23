@@ -1,6 +1,6 @@
 
 
-function mostrarMensaje() {
+/*function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
   const seleccionTrivia = document.getElementById("seleccionTrivia");
   const opcionSeleccionada = seleccionTrivia.value;
@@ -14,7 +14,7 @@ function mostrarMensaje() {
     document.getElementById("mensaje").textContent = mensaje;
   } else {
     // Manejar el caso en el que no se ha seleccionado ninguna opción
-    alert("Debes seleccionar una trivia para continuar.");
+    alert("Debes ingresar ambos datos para continuar.");
   }
 }
 
@@ -22,9 +22,27 @@ function mostrarMensaje() {
 // Obtén una referencia al botón por su ID
 const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
 
-document.getElementById("seleccionTrivia").addEventListener("change", mostrarMensaje);
+botonMostrarMensaje.addEventListener("click", mostrarMensaje);*/
 
 
+function mostrarMensaje() {
+  const nombre = document.getElementById("inputNombre").value;
+  const seleccionTrivia = document.getElementById("seleccionTrivia");
+  const opcionSeleccionada = seleccionTrivia.value;
+  const mensajeElement = document.getElementById("mensaje");
+
+  if (nombre && opcionSeleccionada) {
+    const triviaSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
+    const mensaje = `Hola ${nombre}, has ingresado a la trivia de ${triviaSeleccionada}. Mucha suerte!`;
+    mensajeElement.textContent = mensaje;
+  } else {
+    alert("Debes ingresar ambos datos para continuar.");
+  }
+}
+
+const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
+
+botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 
 
