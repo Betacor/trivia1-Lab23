@@ -158,9 +158,19 @@ body {
 
 .cont-ingreso-datos{
   display: flex;
+  justify-content-center;
   align-items:center;
-  text-align: center;
-  margin:
+  padding: 70px 150px;
+  margin: 0 auto;
+}
+
+.cont-nombre, .cont-btn{
+  text-align-center;
+  margin: 0 auto
+}
+
+.form-select{
+  padding: 20px;
 }
 
 /* Button - Add it from the README instructions */
@@ -212,6 +222,10 @@ h2 {
 
 
 /*CSS Preguntas*/
+
+.pregunta{
+  margin: 4em;
+}
 
 
 .titulo-pregunta{
