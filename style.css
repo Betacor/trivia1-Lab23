@@ -1,14 +1,13 @@
 /* CSS variables */
 :root {
   --color-bg: #f2e4f9;
-  --color-text-main: #000000;
   --color-titulo: #E64996;
   --color-primario: #FE6DAE; 
   --color-secundario: #FFFF00; 
   --color-terciario: #FFFF00; 
 }
 
-/* Basic page style resets */
+/* Resets */
 * {
   margin: 0;
   padding: 0;
@@ -16,31 +15,6 @@
   font-family: 'Nunito', sans-serif;
 }
 
-/*[hidden] {
-  display: none !important;
-}*/
-
-
-/* Navigation grid */
-.footer {
-  text-align: center;
-  
-  
-  margin: 0 auto;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 2px solid var(--color-titulo);;
-}
-
-
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
 
 body {
   background-color: var(--color-bg);
@@ -139,12 +113,16 @@ button:hover, input:hover, .select:hover{
 
 
 .mensaje-nombre{
-  text-align: center
-  margin: 80px auto;
+  text-align: center;
   padding: 0 200px;
+  margin: 80px auto;
 }
 
-.mensaje-nombre{}
+.mensaje-nombre p{
+  font-size: 30px;
+  font-weight: bold;
+  color: #839cb5;
+}
 
 
 /*CSS Preguntas*/
@@ -181,4 +159,15 @@ button:hover, input:hover, .select:hover{
   /*display: flex;*/
   align-items: center;
   gap: 10px;
+}
+
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  border-top: 2px solid var(--color-titulo);;
 }
