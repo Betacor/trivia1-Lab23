@@ -76,11 +76,11 @@ function respuestasPrincesas(){
   });
   
   let alertPrincesas = "Tus respuestas son:\n";
-  
+  for (const pregunta in respuestasPrincesas){
+    alertPrincesas += `${pregunta}: ${respuestasPrincesas[pregunta]}\n`;
+  }
   console.log(respuestasPrincesas);
-  alert("Tus respuestas:")
+  alert(alertPrincesas);
 }
 
-const responderPrincesas = document.getElementById("responderprincesas");
-
-responderPrincesas.addEventListener("click", mostrarMensaje);
+respuestasPrincesas();
