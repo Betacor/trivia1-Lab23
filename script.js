@@ -60,7 +60,20 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 function respuestasPrincesas(){
   const formPrincesas = document.getElementById("formPrincesas");
   const respuestasPrincesas = {};
+
+  const preguntasPrincesas = formPrincesas.querySelectorAll(".preguntaPrincesa");
+  preguntasPrincesas.forEach((preguntaPrincesa, index) => {
+    
+    const nombrePregPrincesa = `preguntaPrincesa${index + 1}`;
+    const opcionSeleccionada = preguntaPrincesa.querySelector('input[name=" ' + nombrePregPrincesa + '"]:checked');
+  
+    if (opcionSeleccionada){
+      respuestasPrincesas[nombrePregPrincesa] = opcionSeleccionada.value;
+      
+    }else{
+      respuestasPrincesas[nombrePregPrincesa] = "No seleccionada";
+    }
+  });
+  
+  console.log(respuestasPrincesas);
 }
-
-
-const preguntaPrincesa = formPrincesas.querySelectorAll(".preguntaPrincesa");
