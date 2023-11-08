@@ -65,7 +65,7 @@ function respuestasPrincesas(){
   preguntasPrincesas.forEach((preguntaPrincesa, index) => {
     
     const nombrePregPrincesa = `preguntaPrincesa${index + 1}`;
-    const opcionSeleccionada = preguntaPrincesa.querySelector('input[name=" ' + nombrePregPrincesa + '"]:checked');
+    const opcionSeleccionada = preguntaPrincesa.querySelector('input[name="' + nombrePregPrincesa + '"]:checked');
   
     if (opcionSeleccionada){
       respuestasPrincesas[nombrePregPrincesa] = opcionSeleccionada.value;
@@ -83,4 +83,4 @@ function respuestasPrincesas(){
   alert(alertPrincesas);
 }
 
-respuestasPrincesas();
+//respuestasPrincesas();
