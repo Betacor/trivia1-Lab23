@@ -79,7 +79,7 @@ function mostrarResultadoPaises() {
     mensajeResultado += `¿De cual país es la Princesa BlancaNieves?: ${respuesta3.value}\n`;
   }
 
-  // Calcula el puntaje
+  // Calculo del puntaje
   let puntaje = 0;
   if (respuesta1 && respuesta1.value === "Noruega") {
     puntaje++;
@@ -105,7 +105,7 @@ function mostrarResultadoPaises() {
     document.getElementById("respuestaPregunta3").textContent = `¿De cual país es la Princesa BlancaNieves?: Alemania`;
     document.getElementById("puntaje").textContent = puntaje;
 
-    // Agrega botón para reiniciar la Trivia
+    // Agrega botón para reiniciar la Trivia, redirigiendo al Inicio
     const volverAJugarButton = document.getElementById("volverAJugar");
     volverAJugarButton.style.display = "block";
     volverAJugarButton.addEventListener("click", function() {
