@@ -240,3 +240,15 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   color: var(--color-terciario);
   border-top: 2px solid var(--color-titulo);
 }
+
+#resultadoPreguntas{
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid var(--color-claro);
+  background-color: var(--color-secundario);
+  padding: 2em;
+}
+
+.coronas{
+  font-size: x-large;
+}

@@ -56,31 +56,62 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 //TRIVIAS
 
-//princesas
-function respuestasPrincesas(){
-  const formPrincesas = document.getElementById("formPrincesas");
-  const respuestasPrincesas = {};
 
-  const preguntasPrincesas = formPrincesas.querySelectorAll(".preguntaPrincesa");
-  preguntasPrincesas.forEach((preguntaPrincesa, index) => {
-    
-    const nombrePregPrincesa = `preguntaPrincesa${index + 1}`;
-    const opcionSeleccionada = preguntaPrincesa.querySelector('input[name="' + nombrePregPrincesa + '"]:checked');
-  
-    if (opcionSeleccionada){
-      respuestasPrincesas[nombrePregPrincesa] = opcionSeleccionada.value;
-      
-    }else{
-      respuestasPrincesas[nombrePregPrincesa] = "No seleccionada";
-    }
-  });
-  
-  let alertPrincesas = "Tus respuestas son:\n";
-  for (const pregunta in respuestasPrincesas){
-    alertPrincesas += `${pregunta}: ${respuestasPrincesas[pregunta]}\n`;
+
+
+// Resultados Trivia Paises
+
+function mostrarResultadoPaises() {
+  // Variables con las respuestas seleccionadas 
+  const respuesta1 = document.querySelector('input[name="pregunta1"]:checked');
+  const respuesta2 = document.querySelector('input[name="pregunta2"]:checked');
+  const respuesta3 = document.querySelector('input[name="pregunta3"]:checked');
+
+  // Mensaje de resultados para la alerta
+  let mensajeResultado = `Respuestas seleccionadas:\n`;
+  if (respuesta1) {
+    mensajeResultado += `¿En qué país se ubica el Reino de Arendelle en Frozen?: ${respuesta1.value}\n`;
   }
-  console.log(respuestasPrincesas);
-  alert(alertPrincesas);
+  if (respuesta2) {
+    mensajeResultado += `¿Cual princesa vive en un pueblo de la Polinesia?: ${respuesta2.value}\n`;
+  }
+  if (respuesta3) {
+    mensajeResultado += `¿De cual país es la Princesa BlancaNieves?: ${respuesta3.value}\n`;
+  }
+
+  // Calcula el puntaje
+  let puntaje = 0;
+  if (respuesta1 && respuesta1.value === "Noruega") {
+    puntaje++;
+  }
+  if (respuesta2 && respuesta2.value === "Moana") {
+    puntaje++;
+  }
+  if (respuesta3 && respuesta3.value === "Alemania") {
+    puntaje++;
+  }
+
+  // Muestra una alerta para confirmar o cancelar
+  const confirmacion = confirm(mensajeResultado + "\n¿Estás seguro de continuar?");
+  if (confirmacion) {
+    // Si acepta el usuario, oculta el botón "responder y ver resultados"
+    document.getElementById("responderPaises").style.display = "none";
+    
+    // Muestra las respuestas correctas y el puntaje
+    const resultadoPreguntas = document.getElementById("resultadoPreguntas");
+    resultadoPreguntas.style.display = "block";
+    document.getElementById("respuestaPregunta1").textContent = `¿En qué país se ubica el Reino de Arendelle en Frozen?: Noruega`;
+    document.getElementById("respuestaPregunta2").textContent = `¿Cual princesa vive en un pueblo de la Polinesia?: Moana`;
+    document.getElementById("respuestaPregunta3").textContent = `¿De cual país es la Princesa BlancaNieves?: Alemania`;
+    document.getElementById("puntaje").textContent = puntaje;
+
+    // Agrega botón para reiniciar la Trivia
+    const volverAJugarButton = document.getElementById("volverAJugar");
+    volverAJugarButton.style.display = "block";
+    volverAJugarButton.addEventListener("click", function() {
+      window.location.href = "index.html";
+    });
+  }
 }
 
-//respuestasPrincesas();
+

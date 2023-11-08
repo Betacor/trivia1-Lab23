@@ -104,8 +104,18 @@
     </section>
 
     <div class="btn-responder">
-      <button class="btn-responder" id="responderPrincesas">Responder y ver Resultados</button>
+      <button class="btn-responder" id="responderPaises" onclick="mostrarResultadoPaises()">Responder y ver Resultados</button>
     </div>
+
+    <div id="resultadoPreguntas" style="display: none;">
+      <p>Respuestas correctas:</p>
+      <p id="respuestaPregunta1"></p>
+      <p id="respuestaPregunta2"></p>
+      <p id="respuestaPregunta3"></p>
+      <p class="coronas">Has ganado: <span id="puntaje"></span> coronas</p>
+      <button class="btn-responder" id="volverAJugar" onclick="reiniciarTrivia()">Volver a jugar</button>
+    </div>
+    
     
     
     <footer class="footer">
