@@ -75,5 +75,12 @@ function respuestasPrincesas(){
     }
   });
   
+  let alertPrincesas = "Tus respuestas son:\n";
+  
   console.log(respuestasPrincesas);
+  alert("Tus respuestas:")
 }
+
+const responderPrincesas = document.getElementById("responderprincesas");
+
+responderPrincesas.addEventListener("click", mostrarMensaje);
