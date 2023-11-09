@@ -198,8 +198,9 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   background-color: var(--color-primario); 
 }
 
+
 /* Marcador dentro del radio button */
-.custom-radio::before {
+/*.custom-radio::before {
   content: "";
   display: block;
   width: 12px;
@@ -208,12 +209,12 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   background-color: var(--color-primario); 
   margin: 3px; 
   opacity: 0; 
-}
+}*/
 
 /* Radio button está marcado */
-.custom-radio:checked::before {
+/*.custom-radio:checked::before {
   opacity: 1;
-}
+}*/
 
 
 /*Botón Enviar respuestas*/
@@ -268,4 +269,14 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   font-weight: bold;
   color: var(--color-titulo);
   padding: 2em;
+}
+
+.resp-correcta:checked{
+  background-color: chartreuse;
+  
+}
+
+.resp-incorrecta:checked{
+  background-color: red;
+
 }

@@ -53,13 +53,9 @@ const botonMostrarMensaje = document.getElementById("mostrarMensajeButton");
 botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 
+//-------------------------------------------
 
-
-
-
-
-
-  //TRIVIA PRINCESA
+  //TRIVIA PRINCESAS
 
   //princesas / alert respuestas
   function respuestasPrincesas(){
@@ -99,6 +95,7 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
       if (pregPrincesas1.value === "seis"){
 
         contadorPrincesa += 10;
+        pregPrincesas1.classList.add('resp-correcta');
 
         //contadorPrincesa += " Coronas";
 
@@ -117,15 +114,38 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
         //pregPrincesas1.classList.add('style', 'background:#c4ffeb;');
 
 
-      } if (pregPrincesas2.value === "rosa"){
+      /*} if (pregPrincesas2.value === "rosa"){
 
         contadorPrincesa += 10;
+        pregPrincesas2.classList.add('resp-correcta');
 
       } if (pregPrincesas3.value === "eugene"){
 
         contadorPrincesa += 10;
+        pregPrincesas3.classList.add('resp-correcta');
+      }*/
+        
+      }if (pregPrincesas1.value === "seis") {
+          contadorPrincesa += 10;
+          pregPrincesas1.classList.add('resp-correcta');
+
+      } else {
+          pregPrincesas1.classList.add('resp-incorrecta');
+    
+      } if (pregPrincesas2.value === "rosa") {
+          contadorPrincesa += 10;
+          pregPrincesas2.classList.add('resp-correcta');
+      } else {
+          pregPrincesas2.classList.add('resp-incorrecta');
+
+      } if (pregPrincesas3.value === "eugene") {
+          contadorPrincesa += 10;
+          pregPrincesas3.classList.add('resp-correcta');
+      } else {
+          pregPrincesas3.classList.add('resp-incorrecta');
       }
 
+        
       console.log(contadorPrincesa);
       
 
@@ -138,10 +158,6 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
       const msjPuntajePrincesa = document.getElementById("msjPuntajePrincesa");
 
       const mensajeRespuestasPrincesa  = `Obtuviste ${contadorPrincesa} Coronas!`;
-      //mensajeRespuestasPrincesa.style.background='#c4ffeb';
-      //mensajeRespuestasPrincesa.classList.add('style', 'background:#c4ffeb;');
-    //mensajeRespuestasPrincesa.setAttribute('style', 'background:#c4ffeb;');
-
 
       document.getElementById("msjPuntajePrincesa").textContent = mensajeRespuestasPrincesa;
 
@@ -157,10 +173,11 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
     }
   }
 
-  
+
+
   //TRIVIA PAISES
 
-  //princesas / alert respuestas
+  //paises / alert respuestas
   function respuestasPaises(){
     const pregPaises1 = document.querySelector('input[name="pregPaises1"]:checked');
     const pregPaises2 = document.querySelector('input[name="pregPaises2"]:checked');
@@ -198,31 +215,26 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
       if (pregPaises1.value === "Noruega"){
 
         contadorPaises += 10;
+        pregPaises1.classList.add('resp-correcta');
 
-        //contadorPaises += " Coronas";
+      }else{
+        pregPaises1.classList.add('resp-incorrecta');
+        
 
-
-        //const customRadio = document.querySelector(".custom-radio");
-        //const respPreg1 = document.getElementById("respPreg1");
-        //const pregunta1 = document.querySelector(".pregunta-1");
-        //const seis = "pregaises1.value";
-
-
-        //pregPrincesas1.setAttribute("style", "background-color:darkblue;");
-        //pregPrincesas1.style.color='rgb(#c4ffeb)';
-        //customRadio.setAttribute('style', 'background-color:#c4ffeb;');
-        //pregPrincesas1.setAttribute('style', 'background:#c4ffeb;');
-        //seis.setAttribute('style', 'background-color:#c4ffeb;');
-        //pregPrincesas1.classList.add('style', 'background:#c4ffeb;');
-
-
-      } if (pregPaises2.value === "Moana"){
+      }if (pregPaises2.value === "Moana"){
 
         contadorPaises += 10;
+        pregPaises2.classList.add('resp-correcta');
+      }else{
+        pregPaises2.classList.add('resp-incorrecta');
+
 
       } if (pregPaises3.value === "Alemania"){
 
         contadorPaises += 10;
+        pregPaises3.classList.add('resp-correcta');
+      }else{
+        pregPaises3.classList.add('resp-incorrecta');
       }
 
       console.log(contadorPaises);
@@ -236,11 +248,8 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
       //mostrar mensaje con puntaje paises
       const msjPuntajePaises = document.getElementById("msjPuntajePaises");
 
-      const mensajeRespuestasPaises  = `Obtuviste ${contadorPaises} Coronas!`;
-      //mensajeRespuestasPrincesa.style.background='#c4ffeb';
-      //mensajeRespuestasPrincesa.classList.add('style', 'background:#c4ffeb;');
-    //mensajeRespuestasPrincesa.setAttribute('style', 'background:#c4ffeb;');
-
+      const mensajeRespuestasPaises  = `¡Obtuviste ${contadorPaises} Coronas ♛!`;
+      
 
       document.getElementById("msjPuntajePaises").textContent = mensajeRespuestasPaises;
 
@@ -256,7 +265,4 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
     }
   }
 
-
-
-
-
+  
