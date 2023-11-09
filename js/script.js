@@ -195,7 +195,7 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
       console.log(pregPaises1.value);
 
 
-      if (pregPaises1.value === "seis"){
+      if (pregPaises1.value === "Noruega"){
 
         contadorPaises += 10;
 
@@ -216,11 +216,11 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
         //pregPrincesas1.classList.add('style', 'background:#c4ffeb;');
 
 
-      } if (pregPaises2.value === "rosa"){
+      } if (pregPaises2.value === "Moana"){
 
         contadorPaises += 10;
 
-      } if (pregPaises3.value === "eugene"){
+      } if (pregPaises3.value === "Alemania"){
 
         contadorPaises += 10;
       }
