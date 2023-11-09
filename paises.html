@@ -4,14 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <title>Trivia Paises</title>
+    <title>Trivia Países</title>
+    <!-- The website stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    
-  
   </head>
 
   <body>
@@ -26,10 +25,12 @@
         <p id="mensaje"></p>
       </div>
     
+      
+      <!--pregunta 1-->
       <div class="pregunta">
-        <div >
-          <h2 class="titulo-pregunta">¿En qué país se ubica el Reino de Arendelle en Frozen?</h2>
-        </div>
+         <div >
+           <h2 class="titulo-pregunta">¿En qué país se ubica el Reino de Arendelle en Frozen?</h2>
+         </div>
         <div class="contenido-pregunta">
           <img 
             src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/Frozen.jpg?v=1699381514761"
@@ -37,19 +38,21 @@
             alt="Rapunzel"      
           />
             
-          <div class="radio-contenedor">
-              <input class="custom-radio" type="radio" name="pregunta1" value="Islandia"/>
+           <div class="radio-contenedor">
+              <input class="custom-radio" type="radio" name="pregPaises1" value="Islandia"/>
               <label for="Islandia">Islandia</label><br> 
             
-              <input class="custom-radio" type="radio" name="pregunta1" value="Noruega"/>
+              <input class="custom-radio" type="radio" name="pregPaises1" value="Noruega"/>
               <label for="Noruega">Noruega</label><br> 
               
-              <input class="custom-radio" type="radio" name="pregunta1" value="Escocia"/>
+              <input class="custom-radio" type="radio" name="pregPaises1" value="Escocia"/>
               <label for="Escocia">Escocia</label><br> 
           </div>
         </div>  
       </div>
       
+      
+      <!--pregunta 2-->
       <div class="pregunta">
           <div >
             <h2 class="titulo-pregunta">¿Cual princesa vive en un pueblo de la Polinesia?</h2>
@@ -62,19 +65,21 @@
             />
             
             <div class="radio-contenedor">
-              <input class="custom-radio" type="radio" name="pregunta2" value="Ariel"/>
+              <input class="custom-radio" type="radio" name="pregPaises2" value="Ariel"/>
               <label for="Ariel">Ariel</label><br> 
             
-              <input class="custom-radio" type="radio" name="pregunta2" value="Anastasia"/>
+              <input class="custom-radio" type="radio" name="pregPaises2" value="Anastasia"/>
               <label for="Anastasia">Anastasia</label><br> 
               
-              <input class="custom-radio" type="radio" name="pregunta2" value="Moana"/>
+              <input class="custom-radio" type="radio" name="pregPaises2" value="Moana"/>
               <label for="Moana">Moana</label><br> 
               
             </div>
           </div>  
       </div>
       
+      
+      <!--pregunta 3-->
       <div class="pregunta">
           <div >
             <h2 class="titulo-pregunta">¿De cual país es la Princesa BlancaNieves?</h2>
@@ -87,34 +92,28 @@
             />
             
             <div class="radio-contenedor">
-              <input class="custom-radio" type="radio" name="pregunta3" value="Alemania"/>
+              <input class="custom-radio" type="radio" name="pregPaises3" value="Alemania"/>
               <label for="Alemania">Alemania</label><br> 
             
-              <input class="custom-radio" type="radio" name="pregunta3" value="Noruega"/>
+              <input class="custom-radio" type="radio" name="pregPaises3" value="Noruega"/>
               <label for="Noruega">Noruega</label><br> 
               
-              <input class="custom-radio" type="radio" name="pregunta3" value="Francia"/>
+              <input class="custom-radio" type="radio" name="pregPaises3" value="Francia"/>
               <label for="Francia">Francia</label><br> 
               
             </div>
           </div>  
       </div>
-      
     </section>
-
+    
     <div class="btn-responder">
-      <button class="btn-responder" id="responderPaises" onclick="mostrarResultadoPaises()">Responder y ver Resultados</button>
-    </div>
-
-    <div id="resultadoPreguntas" style="display: none;">
-      <p>Respuestas correctas:</p>
-      <p id="respuestaPregunta1"></p>
-      <p id="respuestaPregunta2"></p>
-      <p id="respuestaPregunta3"></p>
-      <p class="coronas">Has ganado: <span id="puntaje"></span> coronas</p>
-      <button class="btn-responder" id="volverAJugar" onclick="reiniciarTrivia()">Volver a jugar</button>
+      <button class="btn-responder" id="respPaisesBtn" onclick="respuestasPaises()">Responder y ver Resultados</button>
     </div>
     
+    <div>
+      <p id="msjPuntajePaises"></p>
+      <button id="volverJugarBtn" onclick="reiniciarTrivia()">Volver a jugar</button>
+    </div>
     
     
     <footer class="footer">

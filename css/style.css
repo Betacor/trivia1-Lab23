@@ -146,7 +146,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 
 /*CSS Preguntas*/
 
-.pregunta{
+.pregunta, .preguntaPrincesa{
   margin: 6em 10em;
 }
 
@@ -183,9 +183,42 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   padding-left: 10px;
 }
 
-/*Botón Eviar respuestas*/
+.custom-radio {
+  appearance: none; 
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-primario); 
+  border-radius: 50%; 
+  outline: none;
+  cursor: pointer;
+}
+
+/* Radio button cuando está marcado */
+.custom-radio:checked {
+  background-color: var(--color-primario); 
+}
+
+/* Marcador dentro del radio button */
+.custom-radio::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; 
+  background-color: var(--color-primario); 
+  margin: 3px; 
+  opacity: 0; 
+}
+
+/* Radio button está marcado */
+.custom-radio:checked::before {
+  opacity: 1;
+}
+
+
+/*Botón Enviar respuestas*/
 .btn-responder{
-  margin: 1em auto;
+  margin: 0 auto;
   display:flex;
   font-size: 1.2em;
   color: #F7F9F9;
@@ -197,38 +230,7 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
 
 
 
-/* Estilo para el radio button personalizado */
-.custom-radio {
-  appearance: none; /* Oculta el aspecto nativo del radio button */
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--color-primario); /* Borde del radio button */
-  border-radius: 50%; /* Lo hace circular */
-  outline: none;
-  cursor: pointer;
-}
 
-/* Estilo para el radio button personalizado cuando está marcado */
-.custom-radio:checked {
-  background-color: var(--color-primario); /* Color de fondo cuando está marcado */
-}
-
-/* Estilo para el marcador dentro del radio button */
-.custom-radio::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%; /* Lo hace circular */
-  background-color: var(--color-primario); /* Color del marcador */
-  margin: 3px; /* Espacio entre el marcador y el borde del radio button */
-  opacity: 0; /* Oculta el marcador cuando no está marcado */
-}
-
-/* Estilo para el marcador cuando el radio button está marcado */
-.custom-radio:checked::before {
-  opacity: 1; /* Muestra el marcador cuando está marcado */
-}
 
 
 /* Footer */
@@ -241,14 +243,28 @@ button:hover, .cont-ingreso-datos input:hover, .cont-ingreso-datos select:hover{
   border-top: 2px solid var(--color-titulo);
 }
 
-#resultadoPreguntas{
+
+#volverJugarBtn{
+  display: none;
+  margin: 1em auto 3em;
+  font-size: 1.2em;
+  color: #F7F9F9;
+}
+
+#msjPuntajePrincesa{
   margin: 0 auto;
   text-align: center;
-
-  background-color: var(--color-secundario);
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-titulo);
   padding: 2em;
 }
 
-.coronas{
-  font-size: x-large;
+#msjPuntajePaises{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-titulo);
+  padding: 2em;
 }

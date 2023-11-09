@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <title>Trivia Princesas</title>
+    <!-- The website stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-
+    <!-- The website JavaScript file -->
     <script src="js/script.js" defer></script>
   </head>
   
@@ -25,11 +26,11 @@
     </div>
     
     <section>
-      <form id="formPrincesas"
+      <form id="formPrincesas">
         <!--pregunta 1-->
         <div class="preguntaPrincesa">
             <div >
-              <h2 class="titulo-pregunta">1. ¿Cuantas hermanas tiene la Sirenita?</h2>
+              <h2 class="titulo-pregunta">1. ¿Cuantas hermanas tiene la princesa Sirenita?</h2>
             </div>
             <div class="contenido-pregunta">
               <img 
@@ -37,17 +38,18 @@
               class="imagen-pregunta"
               alt="Sirenita"      
               />
-              <div class="radio-contenedor">
-                <input class="custom-radio"  type="radio" name="pregPrincesas1" value="cinco"/>
+              <div class="radio-contenedor pregunta-1">
+                <input class="custom-radio" type="radio" name="pregPrincesas1" value="cinco"/>
                 <label for="cinco">Cinco</label><br> 
 
                 <input class="custom-radio"  type="radio" name="pregPrincesas1" value="seis"/>
-                <label for="seis">Seís</label><br> 
+                <label for="seis">Seis</label><br> 
 
                 <input class="custom-radio"  type="radio" name="pregPrincesas1" value="cuatro"/>
                 <label for="cuatro">Cuatro</label><br>              
               </div>
             </div>  
+            
           </div>
 
 
@@ -81,7 +83,7 @@
         <!--pregunta 3-->
         <div class="preguntaPrincesa">
            <div >
-             <h2 class="titulo-pregunta">3. ¿Cual es el verdadero nombre de Flynn Ryder?</h2>
+             <h2 class="titulo-pregunta">3. ¿Cual es el verdadero nombre de Flynn Ryder en Rapunzel? </h2>
            </div>
           <div class="contenido-pregunta">
             <img 
@@ -102,49 +104,20 @@
             </div>
           </div>  
         </div>
-
-
-
-
-
-
-
-
-        <!--pregunta 4
-        <div class="pregunta">
-           <div >
-             <h2 class="titulo-pregunta">4. ¿En qué fue convertida la mamá de Chip en la Bella y la Bestia?</h2>
-           </div>
-          <div class="contenido-pregunta">
-            <img 
-              src="https://cdn.glitch.global/0e40321b-95e3-4126-b38f-941ec5eac2e6/la-bella-y-la-bestia.jpg?v=1699380834745"
-              class="imagen-pregunta"
-              alt="La Bella y la Bestia"      
-            />
-
-             <div class="radio-contenedor">
-               <input class="custom-radio"  type="radio" name="bella1" value="lampara"/>
-               <label for="lampara">Lampara</label><br> 
-
-               <input class="custom-radio"  type="radio" name="bella2" value="taza"/>
-               <label for="taza">Taza de té</label><br> 
-
-               <input class="custom-radio"  type="radio" name="bella3" value="tetera"/>
-              <label for="tetera">Tetera</label><br> 
-
-            </div>
-          </div>  
-        </div>-->
       </form>
-      <div class="btn-responder">
-          <!--<button class="btn-responder" id="responderPrincesas">Responder y ver Resultados</button>-->
-          <button onclick="respuestasPrincesas()">Mostrar respuestas</button>      
-      </div>
     </section>
     
-  
-  
-  
+ 
+    <div class="btn-responder">
+      <button class="btn-responder" id="respPrincesasBtn" onclick="respuestasPrincesas()">Responder y ver Resultados</button>
+    </div>
+    
+    
+ 
+    <div>
+      <p id="msjPuntajePrincesa"></p>
+      <button id="volverJugarBtn" onclick="reiniciarTrivia()">Volver a jugar</button>
+    </div>
   
   
     <footer class="footer">
