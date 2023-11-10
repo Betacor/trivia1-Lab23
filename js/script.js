@@ -11,20 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
 //recuperar datos ingresados, validacion y alerta
 function mostrarMensaje() {
   const nombre = document.getElementById("inputNombre").value;
-  const seleccionTrivia = document.getElementById("seleccionTrivia");
-  const opcionSeleccionada = seleccionTrivia.value;
+  const seleccionTrivia = document.getElementById("seleccionTrivia"); //es un select
+  const opcionSeleccionada = seleccionTrivia.value; //captura el value del select
   console.log(opcionSeleccionada);
-  //const mensajeElement = document.getElementById("mensaje");
-  
+    
 
   if (nombre && opcionSeleccionada) {
-  //const triviaSeleccionada = seleccionTrivia.options[seleccionTrivia.selectedIndex].text;
-    //const triviaSeleccionada = opcionSeleccionada.value;
+
     let redireccion = "";
     
     if (opcionSeleccionada === "Paises") {
@@ -57,13 +53,13 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
   //TRIVIA PRINCESAS
 
-  //princesas / alert respuestas
+  //Capturamos los input checked
   function respuestasPrincesas(){
     const pregPrincesas1 = document.querySelector('input[name="pregPrincesas1"]:checked');
     const pregPrincesas2 = document.querySelector('input[name="pregPrincesas2"]:checked');
     const pregPrincesas3 = document.querySelector('input[name="pregPrincesas3"]:checked');
-    //const colorRespuesta = "#c4ffeb";
-
+    
+    //Armamos el mensaje que se mostrará en la alerta
     let resultadoPrincesa = `Respuestas seleccionadas:\n`;
     if (pregPrincesas1) {
       resultadoPrincesa += `Pregunta 1: ${pregPrincesas1.value}\n`;
@@ -77,58 +73,19 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
     }
     console.log(respuestasPrincesas);
 
-    
-
-    //muestra una confirmación con los resultados
+    //Muestra una confirmación con el mensaje de respuestas y una pregunta
     const confirmarEnvio = confirm(resultadoPrincesa + "\n¿Estás seguro de continuar?");
 
-    //verifica la respuesta del usuario
+    //Según la respuesta del usuario hay 2 caminos
     if (confirmarEnvio) {
-
-      //let puntajePrincesa = document.getElementById("puntajePrincesa");
 
       let contadorPrincesa = 0;
 
       console.log(pregPrincesas1.value);
 
-
       if (pregPrincesas1.value === "seis"){
-
         contadorPrincesa += 10;
         pregPrincesas1.classList.add('resp-correcta');
-
-        //contadorPrincesa += " Coronas";
-
-
-        //const customRadio = document.querySelector(".custom-radio");
-        //const respPreg1 = document.getElementById("respPreg1");
-        //const pregunta1 = document.querySelector(".pregunta-1");
-        //const seis = "pregprincesas1.value";
-
-
-        //pregPrincesas1.setAttribute("style", "background-color:darkblue;");
-        //pregPrincesas1.style.color='rgb(#c4ffeb)';
-        //customRadio.setAttribute('style', 'background-color:#c4ffeb;');
-        //pregPrincesas1.setAttribute('style', 'background:#c4ffeb;');
-        //seis.setAttribute('style', 'background-color:#c4ffeb;');
-        //pregPrincesas1.classList.add('style', 'background:#c4ffeb;');
-
-
-      /*} if (pregPrincesas2.value === "rosa"){
-
-        contadorPrincesa += 10;
-        pregPrincesas2.classList.add('resp-correcta');
-
-      } if (pregPrincesas3.value === "eugene"){
-
-        contadorPrincesa += 10;
-        pregPrincesas3.classList.add('resp-correcta');
-      }*/
-        
-      }if (pregPrincesas1.value === "seis") {
-          contadorPrincesa += 10;
-          pregPrincesas1.classList.add('resp-correcta');
-
       } else {
           pregPrincesas1.classList.add('resp-incorrecta');
     
@@ -145,22 +102,18 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
           pregPrincesas3.classList.add('resp-incorrecta');
       }
 
-        
       console.log(contadorPrincesa);
       
-
       //ocultamos botón Responder
       document.getElementById("respPrincesasBtn").style.display = "none";
 
 
       //mostramos respuestas correctas y puntaje
-      //mostrar mensaje con puntaje princesas
       const msjPuntajePrincesa = document.getElementById("msjPuntajePrincesa");
 
-      const mensajeRespuestasPrincesa  = `Obtuviste ${contadorPrincesa} Coronas!`;
+      const mensajeRespuestasPrincesa  = `Obtuviste ${contadorPrincesa} Coronas ♛!`;
 
       document.getElementById("msjPuntajePrincesa").textContent = mensajeRespuestasPrincesa;
-
 
 
       //botón para reiniciar  
@@ -213,24 +166,18 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
 
       if (pregPaises1.value === "Noruega"){
-
         contadorPaises += 10;
         pregPaises1.classList.add('resp-correcta');
-
       }else{
         pregPaises1.classList.add('resp-incorrecta');
         
-
       }if (pregPaises2.value === "Moana"){
-
         contadorPaises += 10;
         pregPaises2.classList.add('resp-correcta');
       }else{
         pregPaises2.classList.add('resp-incorrecta');
 
-
       } if (pregPaises3.value === "Alemania"){
-
         contadorPaises += 10;
         pregPaises3.classList.add('resp-correcta');
       }else{
@@ -239,8 +186,7 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
 
       console.log(contadorPaises);
       
-
-      //ocultamos botón Responder
+      //Ocultamos botón Responder
       document.getElementById("respPaisesBtn").style.display = "none";
 
 
@@ -264,5 +210,3 @@ botonMostrarMensaje.addEventListener("click", mostrarMensaje);
       });
     }
   }
-
-  
